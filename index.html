@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classwork</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            color: #333333;
+            background-color: white;
+            min-width: 1200px;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Georgia', serif; 
+            font-weight: 900;
+            color: #333333;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .page-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .logo-w {
+            font-family: 'Times New Roman', serif;
+            font-size: 40px;
+            font-weight: 900;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            font-size: 16px;
+            color: #555555;
+        }
+        
+        .main-area {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .left-article-section {
+            display: flex;
+            flex-direction: column;
+            width: 65%; 
+        }
+
+        .big-image {
+            width: 100%;
+            height: 300px;
+            background-color: #A0A0A0; 
+            margin-bottom: 25px;
+            background-image: url('placeholder_abstract_image.jpg');
+            background-size: cover;
+        }
+
+        .title-and-text {
+            display: flex;
+            gap: 30px;
+        }
+
+        .main-title-box {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-title-box h1 {
+            font-size: 50px;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+
+        .main-article-text {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            padding-top: 5px;
+        }
+
+        .main-article-text p {
+            color: #555555;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .read-more-btn {
+            background-color: #F06543; 
+            color: white;
+            padding: 15px 30px;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            align-self: flex-start; 
+        }
+
+        .right-new-column {
+            display: flex;
+            flex-direction: column;
+            width: 35%; 
+            background-color: #00001A; 
+            padding: 25px;
+        }
+
+        .right-new-column h2 {
+            color: #FFC000; 
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .new-item {
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .new-item:not(:last-child) {
+            border-bottom: 1px solid #33334A; 
+        }
+
+        .new-item h4 {
+            color: white;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .new-item p {
+            color: #AAAAAA;
+            font-size: 14px;
+        }
+
+        .bottom-card-row {
+            display: flex;
+            gap: 30px;
+            padding-top: 30px;
+            border-top: 1px solid #CCCCCC;
+        }
+
+        .article-card {
+            display: flex;
+            width: 33.33%; 
+            gap: 20px;
+        }
+
+        .card-image {
+            width: 100px;
+            height: 120px;
+            background-color: #AAAAAA; 
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-text-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-number {
+            color: #CCCCCC; 
+            font-size: 32px;
+            font-weight: 900;
+        }
+
+        .card-title {
+            color: #333333;
+            font-size: 18px;
+            font-weight: 900;
+            line-height: 1.2;
+        }
+
+        .card-description {
+            color: #555555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-container">
+        
+        <header class="top-nav">
+            <div class="logo-w">W.</div>
+            <nav class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">New</a>
+                <a href="#">Popular</a>
+                <a href="#">Trending</a>
+                <a href="#">Categories</a>
+            </nav>
+        </header>
+
+        <main class="main-area">
+            
+            <section class="left-article-section">
+                <div class="big-image" style="background-image: url('https://via.placeholder.com/680x300/4c3c6f/ffffff?text=3D+Abstract+Web+3.0');"></div>
+                
+                <div class="title-and-text">
+                    <div class="main-title-box">
+                        <h1>The Bright Future of Web 3.0?</h1>
+                    </div>
+                    <div class="main-article-text">
+                        <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+                        <a href="#" class="read-more-btn">READ MORE</a>
+                    </div>
+                </div>
+            </section>
+            
+            <aside class="right-new-column">
+                <h2>New</h2>
+                
+                <div class="new-item">
+                    <a href="#"><h4>Hydrogen VS Electric Cars</h4></a>
+                    <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                </div>
+                
+                <div class="new-item">
+                    <a href="#"><h4>The Downsides of AI Artistry</h4></a>
+                    <p>What are the possible adverse effects of on-demand AI image generation?</p>
+                </div>
+                
+                <div class="new-item">
+                    <a href="#"><h4>Is VC Funding Drying Up?</h4></a>
+                    <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                </div>
+            </aside>
+            
+        </main>
+        
+        <section class="bottom-card-row">
+            
+            <article class="article-card">
+                <div class="card-image" style="background-image: url('https://via.placeholder.com/100x120/800080/ffffff?text=PC');"></div>
+                <div class="card-text-content">
+                    <p class="card-number">01</p>
+                    <a href="#"><h4 class="card-title">Reviving Retro PCs</h4></a>
+                    <p class="card-description">What happens when old PCs are given modern upgrades?</p>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <div class="card-image" style="background-image: url('https://via.placeholder.com/100x120/0000FF/ffffff?text=Laptop');"></div>
+                <div class="card-text-content">
+                    <p class="card-number">02</p>
+                    <a href="#"><h4 class="card-title">Top 10 Laptops of 2022</h4></a>
+                    <p class="card-description">Our best picks for various needs and budgets.</p>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <div class="card-image" style="background-image: url('https://via.placeholder.com/100x120/FF0000/ffffff?text=Gaming');"></div>
+                <div class="card-text-content">
+                    <p class="card-number">03</p>
+                    <a href="#"><h4 class="card-title">The Growth of Gaming</h4></a>
+                    <p class="card-description">How the pandemic has sparked fresh opportunities.</p>
+                </div>
+            </article>
+            
+        </section>
+
+    </div>
+
+</body>
+</html>
